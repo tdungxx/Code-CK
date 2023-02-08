@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Game Store</title>
+</head>
+
+<body>
+    
+    <!-- Đầu Trang -->
+    <div id="wrapper">
+        <div id="header">
+            <nav class="container">
+                <a href="" id="logo">
+                    <img src="./img/logo.png" alt="logo">
+                </a>
+                <ul id="main-menu">
+                    <li><a href="#wrapper">❍ Trang Chủ</a>
+                    </li>
+                    <li><a href="#giocahang">❍ Giỏ hàng</a>
+                    </li>
+                    <li><a href="">❍ Thể Loại Game</a>
+                        <ul class="sub-menu">
+                            <li><a href="#action">Hành Động</a></li>
+                            <li><a href="#horror">Kinh Dị</a></li>
+                            <li><a href="#sport">Thể Thao</a></li>
+                            <li><a href="#puzzle">Giải Đố</a></li>
+                            <li><a href="#free">Giảm giá</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li><a href="">❍ Nạp Tiền</a>
+                        <ul class="sub-menu">
+                            <li><a href="./index.html">ATM - Banking</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">❍ Thông Tin Cá Nhân</a>
+                        <ul class="sub-menu">
+                            <li><a href="./dgnhap.html" id="username">Đăng Nhập</a></li>
+                            <li><a href="./dk.html" id="username">Đăng Ký</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        
+                                            <!-- Slide của trang -->
+        <h1 class="cac-game" style="padding-bottom: 30px ; padding-top: 100px;"> ★ Các Game Tiêu Biểu ★</h1>
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <input type="radio" name="radio-btn" id="radio5">
+                <div class="slide first">
+                    <img src="./img/ark.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./img/CSGO.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./img/dota2.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./img/FIFA23.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./img/naraka.jpg" alt="">
+                </div>
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                    <div class="auto-btn5"></div>
+                </div>
+            </div>
+            <div class="navigation-manual" id="giocahang">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+                <label for="radio5" class="manual-btn"></label>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            var counter = 1;
+            setInterval(function () {
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if (counter > 4) {
+                    counter = 1;
+                }
+            }, 5000);
+        </script>
+        <!-- Các Game -->
+        <div class="cart-icon">
+        <div class="store">
+            <i class="fa-sharp fa-solid fa-shop" style="color: white;" id="mua"></i><span></span>
+        </div>
+        </div>
+        <h3 style="color: white;"> Nhấn vào biểu tượng trên để mở giỏ hàng</h3>
+        <h1 style="text-align: center ; color: white; padding-top: 80px; padding-bottom: 50px;" id="horror"> - 𝑯𝑶𝑹𝑹𝑶𝑹 𝑮𝑨𝑴𝑬𝑺 - </h1>
+        <section class="product">
+            <div class="container1">
+                <div class="product-items">
+                    <div class="product-item">
+                        <img src="./img/dbl.jpg" alt="" class="anh-game">
+                        <div class="product-item-text">
+                            <p> <span> 100.000</span></p>
+                            <h3> ᴅᴇᴀᴅ ʙʏ ᴅᴀʏʟɪɢʜᴛ</h3>
+                        </div>
+                        <button> Add to cart</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/oulast.jpg" alt="" class="anh-game">
+                        <div class="product-item-text">
+                            <p> <span> 200.000</span></p>
+                            <h3> ᴛʜᴇ ᴏᴜᴛʟᴀsᴛ ᴛʀɪᴀʟs</h3>
+                        </div>
+                        <button> Add to cart</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/phasmophobia.jpg" alt="" class="anh-game">
+                        <div class="product-item-text">
+                            <p> <span> 80.000</span></p>
+                            <h3> ᴘʜᴀsᴍᴏᴘʜᴏʙɪᴀ</h3>
+                        </div>
+                        <button> Add to cart</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/Left4Dead2.jpg" alt="" class="anh-game">
+                        <div class="product-item-text">
+                            <p> <span> 60.000</span></p>
+                            <h3> ʟᴇғᴛ 4 ᴅᴇᴀᴅ 2</h3>
+                        </div>
+                        <button> Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <h1 style="text-align: center ; color: white; padding-top: 80px; padding-bottom: 50px;" id="sport"> - 𝑺𝑷𝑶𝑹𝑻 𝑮𝑨𝑴𝑬𝑺 - </h1>
+        <section class="product">
+            <div class="container1">
+                <div class="product-items">
+                    <div class="product-item">
+                        <img src="./img/fifa232.jpg" alt="" class="anh-game">
+                        <div class="product-item-text">
+                            <p> <span> 980.000</span></p>
+                            <h3> ＦＩＦＡ ２３</h3>
+                        </div>
+                        <button> Add to cart</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/nba2k23.jpg" alt="" class="anh-game">
+                        <div class="product-item-text">
+                            <p> <span> 450.00</span></p>
+                            <h3> ＮＢＡ ２３</h3>
+                        </div>
+                        <button> Add to cart</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/skatesim.jpg" alt="" class="anh-game">
+                        <div class="product-item-text">
+                            <p> <span> 180.000</span></p>
+                            <h3> ＳＫＡＴＥＳＩＭ</h3>
+                        </div>
+                        <button> Add to cart</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/wwe2k22.jpg" alt="" class="anh-game">
+                        <div class="product-item-text">
+                            <p> <span> 320.000</span></p>
+                            <h3> ＷＷＥ ２Ｋ２２</h3>
+                        </div>
+                        <button> Add to cart</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <h1 style="text-align: center ; color: white; padding-top: 80px; padding-bottom: 50px;" id="action"> - 𝑨𝑪𝑻𝑰𝑶𝑵 𝑮𝑨𝑴𝑬𝑺 - </h1>
+        <section class="product">
+            <div class="container1">
+                <div class="product-items">
+                    <div class="product-item">
+                        <img src="./img/battlefield.jpg" alt="" class="anh-game">
+                        <div class="product-item-text">
+                            <p> <span> 990.000</span></p>
+                            <h3> ʙᴀᴛᴛʟᴇғɪᴇʟᴅ ᴠ</h3>
+                        </div>
+                        <button> Add to cart</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/eldenring.jpg" alt="" class="anh-game">
+                        <div class="product-item-text">
+                            <p> <span> 680.000</span></p>
+                            <h3> ᴇʟᴅᴇɴ ʀɪɴɢ</h3>
+                        </div>
+                        <button> Add to cart</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/godofwar.jpg" alt="" class="anh-game">
+                        <div class="product-item-text">
+                            <p> <span> 545.000</span></p>
+                            <h3> ɢᴏᴅ ᴏғ ᴡᴀʀ</h3>
+                        </div>
+                        <button> Add to cart</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/naraka2.jpg" alt="" class="anh-game">
+                        <div class="product-item-text">
+                            <p> <span> 350.000</span></p>
+                            <h3> ɴᴀʀᴀᴋᴀ ʙᴀʟᴅᴇᴘᴏɪɴᴛ</h3>
+                        </div>
+                        <button> Add to cart</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <h1 style="text-align: center ; color: white; padding-top: 80px; padding-bottom: 50px;" id="puzzle"> - 𝑷𝑼𝒁𝒁𝑳𝑬 𝑮𝑨𝑴𝑬𝑺 - </h1>
+        <section class="product">
+            <div class="container1">
+                <div class="product-items">
+                    <div class="product-item">
+                        <img src="./img/unpacking.jpg" alt="" class="anh-game">
+                        <div class="product-item-text">
+                            <p> <span>80.000</span></p>
+                            <h3> ＵＮＰＡＣＫＩＮＧ</h3>
+                        </div>
+                        <button> Add to cart</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/littlenightmaresII.jpg" alt="" class="anh-game">
+                        <div class="product-item-text">
+                            <p> <span> 245.000</span></p>
+                            <h3> ʟɪᴛᴛʟᴇ ɴɴɪɢʜᴛᴍᴀʀᴇs ɪɪ</h3>
+                        </div>
+                        <button> Add to cart</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/ittaketwo.jpg" alt="" class="anh-game">
+                        <div class="product-item-text">
+                            <p> <span> 150.000</span></p>
+                            <h3> 𝐈𝐓 𝐓𝐀𝐊𝐄𝐒 𝐓𝐖𝐎</h3>
+                        </div>
+                        <button> Add to cart</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/Hoa.jpg" alt="" class="anh-game">
+                        <div class="product-item-text">
+                            <p> <span> 75.000</span></p>
+                            <h3> ＨＯＡ</h3>
+                        </div>
+                        <button> Add to cart</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        </section>
+        <h1 style="text-align: center ; color: white; padding-top: 80px; padding-bottom: 50px;" id="free"> - 𝙎𝘼𝙇𝙀 𝙂𝘼𝙈𝙀𝙎 -</h1>
+        <section class="product" style="padding-bottom:120px;">
+            <div class="container1">
+                <div class="product-items">
+                    <div class="product-item">
+                        <img src="./img/csgo2.jpg" alt="" class="anh-game">
+                        <div class="product-item-text">
+                            <p> <span> 350.000</span></p>
+                            <h3> ＣＳＧＯ</h3>
+                        </div>
+                        <button> Add to cart</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/dota22.webp" alt="" class="anh-game">
+                        <div class="product-item-text">
+                            <p> <span> 20.000</span></p>
+                            <h3> ＤＯＴＡ ２</h3>
+                        </div>
+                        <button> Add to cart</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/valorant.jpg" alt="" class="anh-game">
+                        <div class="product-item-text">
+                            <p> <span> 20.000</span></p>
+                            <h3> ＶＡＬＯＲＡＮＴ</h3>
+                        </div>
+                        <button> Add to cart</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/pubg.jpg" alt="" class="anh-game">
+                        <div class="product-item-text">
+                            <p> <span> 350.000</span></p>
+                            <h3> ＰＵＢＧ</h3>
+                        </div>
+                        <button> Add to cart</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Giỏ Hàng -->
+        <section class="cart">
+            <a href=""><i class="fa-solid fa-circle-xmark" style="padding-right: 350px; padding-top: 20px;"></i></a>
+            <h2 style="padding-left: -30px;">  𝘾𝘼𝙍𝙏  </h2>
+            <form action="">
+                <table>
+                    <thead>
+                        <tr class="mauchu">
+                            <th>Sản Phẩm</th>
+                            <th>Giá</th>
+                            <th>Số Lượng</th>
+                            <th>Chọn</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- <tr class="mauchu"><td class="td1"><img style="width: 140px;"  alt=""><span class="tittle"></span></td><td><p> <span class="prices"> </span></p></td><td><input style="width: 30px;outline: none;" type="number" value="1" min="1"></td><td style="cursor:pointer"><span class="cart-delete">Xóa</span></td></tr> -->
+                    </tbody>
+                </table>
+                <div class="price-total gia-tien" style="text-align:right">
+                    <p style="font-weight:bold; color: white;"> Tổng Tiền:<span> </span></p>
+                </div>
+                <button class="button-cuoi"> Thanh Toán </button>
+            </form>
+        </section>
+        <script src="./web.js"></script>
+        <footer class="footer">
+            <div class="containerf">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>COMPANY</h4>
+                        <ul>
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">our services</a></li>
+                            <li><a href="#">privacy policy</a></li>
+                            <li><a href="#">affiliate program</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>GET HELP</h4>
+                        <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">payment</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>ONLINE SHOP</h4>
+                        <ul>
+                        <li><a href="#">game</a></li>
+                        <li><a href="#">sale</a></li>
+                        <li><a href="#">free game</a></li>
+                        <li><a href="#">give away</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4></h4>
+                        <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="./web.js"></script>
+</body>
+
+</html>

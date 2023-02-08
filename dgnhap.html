@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dn</title>
+    <link rel="stylesheet" href="dgnhap.css">
+</head>
+
+<body>
+    <div id="background">
+        <div id="title">
+            <h1>Log in</h1>
+        </div>
+        <div class="khung">
+            <div class="space">
+                <p></p>
+            </div>
+            <div class="content">
+                <label>Username</label>
+                <input type="text" name="username" class="int user"><br><br>
+                <label>Password</label>
+                <input type="text" name="password" class="int password">
+            </div>
+            <div class="space">
+                <input class="btn log" type="button" value="Log in"><br><br>
+                <input class="btn dk" type="button" value="Create new account">
+            </div>
+        </div>
+        <script>
+            var user = document.getElementsByClassName("user")[0]
+            var pw = document.getElementsByClassName("password")[0]
+            var log = document.getElementsByClassName("log")[0]
+            var dk = document.getElementsByClassName("dk")[0]
+            log.addEventListener("click", () => {
+                if (user.value == "" || pw.value == "") {
+                    alert('ko de trong')
+                }
+                else {
+                    window.location.href = "Web.html"
+                }
+            })
+            dk.addEventListener("click", () => {
+                window.location.href = "dk.html"
+            })
+        </script>
+</body>
+
+</html>
